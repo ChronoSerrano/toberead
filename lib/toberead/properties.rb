@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module ToBeRead
+  # Load properties to populate TBR decks
   class Property
     class << self
       def select(property)

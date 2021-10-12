@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module ToBeRead
+  # Management for TBR decks
   class Deck
     def initialize(deck_type)
       @deck = ERB.new(
