@@ -1,0 +1,56 @@
+---
+letter: <%= ('A'..'Z').to_a %>
+color:
+  - red
+  - yellow
+  - blue
+  - brown
+  - orange
+  - green
+  - black
+  - pink
+  - white
+  - gray
+  - purple
+high_low: ['highest', 'lowest']
+old_new: ['oldest', 'newest']
+most_least: ['most', 'least']
+past_future: ['past', 'future']
+genre:
+  - romance
+  - fantasy
+  - contemporary
+  - adult
+  - nonfiction
+  - thriller
+  - horror
+  - rom-com
+  - mystery
+  - self-help
+  - adaptation
+  - poetry
+  - revenge
+  - indie
+  - mythology
+  - dystopian
+  - sapphic romance
+  - adult fantasy
+  - childrens classic
+  - young adult
+  - middle grade
+  - science fiction
+  - historical fiction
+  - graphic novel
+item_type: ["story", "book", "cover", "novella"]
+first_last: ["first", "last"]
+author_type: ["new", "favorite", "asian", "black", "female", "LGBTQ+", "new to you"]
+title_word_count: ["one", "two", "three", "4+"]
+source: ["bookstagram", "booktube", "twitter", "goodreads"]
+setting: ["North America", "South America", "Europe", "Asia", "Africa", "Australia", "Sea"]
+trope: ["enemies to lovers", "animal sidekick", "friends to lovers", "marriage of convenience"]
+length: ["<300", "300-400", "400-500", "500-600", "600+"]
+year: <%= (["Before 2015"] << (2016..2021).to_a).flatten! %>
+on_the_cover: ["person", "animal", "weapon", "hand", "bird", "nature", "water"]
+representation: ["POC", "LGBTQ+", "Disability", "Asian", "Female", "Black"]
+topic: ["cooking", "travel", "music"]
+format: ["paperback", "hardcover", "audiobook", "ebook"]
