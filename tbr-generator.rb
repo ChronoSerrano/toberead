@@ -2,11 +2,11 @@
 
 require 'titleize'
 require 'erb'
-require_relative 'characteristics'
-require_relative 'decks'
+require_relative File.join('lib','characteristics')
+require_relative File.join('lib','decks')
 
 
-prompts = Deck.new("prompts")
-answers = Deck.new("answers")
+prompts, answers = [Deck.new("prompts"), Deck.new("answers")]
+# answers = 
 
 puts [prompts.shuffle, answers.shuffle].join(": ")
