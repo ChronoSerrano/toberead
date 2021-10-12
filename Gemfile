@@ -11,3 +11,5 @@ gem "rspec", "~> 3.0"
 gem "rubocop", "~> 1.7"
 gem "rubocop-rake", "~> 0.6.0"
 gem "rubocop-rspec", "~> 2.5"
+
+gem "bundler-audit", "~> 0.9.0"
