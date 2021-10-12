@@ -6,7 +6,7 @@ plugins:
   fixme:
     enabled: true
   flog:
-    enabled: true
+    enabled: false
   markdownlint:
     enabled: true
   reek:
