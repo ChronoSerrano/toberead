@@ -16,7 +16,7 @@ module ToBeRead
       def load_template
         @load_template ||= ::ERB.new(
           ::File.read(
-            ::File.join(::ToBeRead.template_dir, 'properties.yaml.erb')
+            ::File.join(::ToBeRead.template_dir, "properties.yaml.erb")
           )
         ).result(binding)
       end
