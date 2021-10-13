@@ -1,5 +1,6 @@
 ---
 language: ruby
+dist: focal
 cache: bundler
 # rvm:
 #   - 3.0.2
