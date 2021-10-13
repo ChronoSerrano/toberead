@@ -37,5 +37,5 @@ gem "code_metrics", "~> 0.1.3"
 # Code Coverage
 gem "simplecov", "~> 0.21.2", require: false, group: :test
 
-# Code Coverage lcov formatter
-gem "simplecov-lcov", "~> 0.8.0"
+# Codecov reporter
+gem 'codecov', :require => false, :group => :test
