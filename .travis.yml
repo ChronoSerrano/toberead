@@ -12,6 +12,5 @@ env:
   - TEST_SCRIPT="bundle exec mdl -c .mdlrc README.md"
   - TEST_SCRIPT="bundle exec reek"
   - TEST_SCRIPT="bundle exec churn"
-  - TEST_SCRIPT="egrep -r 'TODO|FIXME|HACK|BUG|XXX' * | grep -v vendor"
 before_install: gem install bundler -v 2.2.22
 script: "${TEST_SCRIPT}"
