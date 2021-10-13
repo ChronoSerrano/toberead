@@ -7,5 +7,9 @@ rvm:
 before_install: gem install bundler -v 2.2.22
 jobs:
   include:
+    - stage: Tests
+      script: bundle exec rake spec
+    - stage: Rubocop
+      script: bundle exec rake rubocop
     - stage: Markdown Linter
       script: bundle exec mdl -c .mdlrc README.md
