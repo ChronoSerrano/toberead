@@ -38,4 +38,4 @@ gem "code_metrics", "~> 0.1.3"
 gem "simplecov", "~> 0.21.2", require: false, group: :test
 
 # Codecov reporter
-gem 'codecov', :require => false, :group => :test
+gem "codecov", "~> 0.6.0", require: false, group: :test
