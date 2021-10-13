@@ -11,5 +11,13 @@ jobs:
       script: bundle exec rake spec
     - stage: Rubocop
       script: bundle exec rake rubocop
+    - stage: Bundler Audit
+      script: bundle exec bundler-audit
     - stage: Markdown Linter
       script: bundle exec mdl -c .mdlrc README.md
+    - stage: Reek
+      script: bundle exec reek
+    - stage: Churn
+      script: bundle exec churn
+    - stage: FIXME Check
+      script: egrep -r "TODO|FIXME|HACK|BUG|XXX" *

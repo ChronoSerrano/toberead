@@ -7,8 +7,9 @@ module ToBeRead
       # Select a book property to fill in deck values
       def select(property)
         properties = ::YAML.safe_load(load_template)
-        abort("Unknown property: #{property}") unless properties.key?(property.to_s)
-        properties[property.to_s].sample
+        property_string = property.to_s
+        abort("Unknown property: #{property}") unless properties.key?(property_string)
+        properties[property_string].sample
       end
 
       private
