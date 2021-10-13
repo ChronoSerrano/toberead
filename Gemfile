@@ -21,3 +21,5 @@ gem 'rubocop-rspec', '~> 2.5'
 
 # Audit bundled gems
 gem 'bundler-audit', '~> 0.9.0'
+
+gem "mdl", "~> 0.11.0"
