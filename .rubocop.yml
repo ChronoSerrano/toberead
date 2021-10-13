@@ -1,13 +1,10 @@
 AllCops:
   TargetRubyVersion: 3.0.2
+  EnabledByDefault: true
+  NewCops: enable
 
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
-
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+Style/Copyright:
+  Enabled: false
 
 Layout/LineLength:
   Max: 120
