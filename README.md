@@ -1,6 +1,6 @@
 # ToBeRead
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/7954005c49836feb5893/maintainability)](https://codeclimate.com/github/ChronoSerrano/toberead/maintainability)
+[![codecov](https://codecov.io/gh/ChronoSerrano/toberead/branch/main/graph/badge.svg?token=AKIEVMU524)](https://codecov.io/gh/ChronoSerrano/toberead)
 
 A commandline tool to generate ideas for what should be next on
 your TBR (To Be Read) list.

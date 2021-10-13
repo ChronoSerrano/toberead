@@ -5,7 +5,3 @@ cache: bundler
 rvm:
   - 3.0.2
 before_install: gem install bundler -v 2.2.22
-before_script:
-  - bash <(curl -Ls https://coverage.codacy.com/get.sh) download
-after_success:
-  - bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r coverage/lcov/toberead.lcov
