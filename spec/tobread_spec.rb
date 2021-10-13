@@ -24,17 +24,4 @@ end
       expect(test_deck.shuffle).to(eq("Test Test Test"))
     end
   end
-  # # before(:each) { @deck = .new(:foo) }
-
-  # # let()
-  # let(:return_value) { "test" }
-  # it "returns the specified value on any instance of the class" do
-  #   another_member_double = double()
-  #   allow(::ToBeRead::Deck).to receive(:new).and_return(another_member_double)
-
-  #   # ::ToBeRead::Deck.any_instance_of.stub(:shuffle).and_return(:return_value)
-
-  #   # o = Object.new
-  #   # o.foo.should eq(:return_value)
-  # end
 end
