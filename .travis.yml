@@ -8,21 +8,10 @@ rvm:
 env:
   - TEST_SCRIPT="bundle exec rake spec"
   - TEST_SCRIPT="bundle exec rake rubocop"
+  - TEST_SCRIPT="bundle exec bundler-audit"
+  - TEST_SCRIPT="bundle exec mdl -c .mdlrc README.md"
+  - TEST_SCRIPT="bundle exec reek"
+  - TEST_SCRIPT="bundle exec churn"
+  - TEST_SCRIPT="egrep -r "TODO|FIXME|HACK|BUG|XXX" *"
 before_install: gem install bundler -v 2.2.22
 script: "${TEST_SCRIPT}"
-# jobs:
-#   include:
-#     - stage: Tests
-#       script: bundle exec rake spec
-#     - stage: Rubocop
-#       script: bundle exec rake rubocop
-#     - stage: Bundler Audit
-#       script: bundle exec bundler-audit
-#     - stage: Markdown Linter
-#       script: bundle exec mdl -c .mdlrc README.md
-#     - stage: Reek
-#       script: bundle exec reek
-#     - stage: Churn
-#       script: bundle exec churn
-#     - stage: FIXME Check
-#       script: egrep -r "TODO|FIXME|HACK|BUG|XXX" *
