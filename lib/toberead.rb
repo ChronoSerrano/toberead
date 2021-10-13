@@ -8,6 +8,7 @@ module ToBeRead
   VERSION = '0.1.1'
   public_constant :VERSION
 
+  # Catch-all Error class
   class Error < StandardError; end
 
   # Set template path

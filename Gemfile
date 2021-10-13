@@ -23,3 +23,9 @@ gem 'rubocop-rspec', '~> 2.5'
 gem 'bundler-audit', '~> 0.9.0'
 
 gem "mdl", "~> 0.11.0"
+
+gem "reek", "~> 6.0"
+
+gem "churn", "~> 1.0"
+
+gem "code_metrics", "~> 0.1.3"
