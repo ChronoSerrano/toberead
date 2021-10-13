@@ -14,3 +14,9 @@ env:
   - TEST_SCRIPT="bundle exec churn"
 before_install: gem install bundler -v 2.2.22
 script: "${TEST_SCRIPT}"
+after_success:
+  # Install deepsource CLI
+  - curl https://deepsource.io/cli | sh
+
+  # From the root directory, run the report coverage command
+  - ./bin/deepsource report --analyzer test-coverage --key ruby --value-file ./coverage/.resultset.json
