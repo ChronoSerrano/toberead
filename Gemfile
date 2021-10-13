@@ -35,4 +35,4 @@ gem "churn", "~> 1.0"
 gem "code_metrics", "~> 0.1.3"
 
 # Code Coverage
-gem "simplecov", require: false, group: :test
+gem "simplecov", "~> 0.21.2", require: false, group: :test
