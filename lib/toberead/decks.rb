@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "titleize"
+
 module ToBeRead
   # Management for TBR decks
   class Deck

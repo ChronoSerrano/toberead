@@ -2,9 +2,8 @@
 
 # frozen_string_literal: true
 
-require "titleize"
 require "erb"
-require "yaml"
+
 require "toberead"
 
 prompts = ::ToBeRead::Deck.new("prompts")

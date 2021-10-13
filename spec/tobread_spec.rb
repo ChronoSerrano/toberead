@@ -20,11 +20,7 @@ end
 
   describe "#shuffle" do
     it "should work" do
-      allow_any_instance_of(::ToBeRead::Deck).to(receive(:new).with(deck_name))
-
-      # test_deck =
       test_deck.instance_variable_set(:@deck, return_value)
-
       expect(test_deck.shuffle).to(eq("Test Test Test"))
     end
   end
