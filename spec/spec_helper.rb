@@ -15,6 +15,7 @@ require "toberead"
 
   config.expect_with(:rspec) do |c|
     c.syntax = :expect
+    c.include_chain_clauses_in_custom_matcher_descriptions = true
   end
 
   config.mock_with(:rspec) do |mocks|
@@ -23,5 +24,6 @@ require "toberead"
     # cause any verifying double instantiation for a class that does not
     # exist to raise, protecting against incorrectly spelt names.
     mocks.verify_doubled_constant_names = true
+    mocks.verify_partial_doubles = true
   end
 end

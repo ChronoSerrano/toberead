@@ -12,16 +12,15 @@ require "spec_helper"
   end
 end
 
-::RSpec.describe(::ToBeRead::Deck) do
-  # let (:deck) {["test", "test1"]}
-  let(:deck_name) { "prompts" }
-  let(:test_deck) { ::ToBeRead::Deck.new(deck_name) }
-  let(:return_value) { ["test TEST Test"] }
+# ::RSpec.describe(::ToBeRead::Deck) do
+#   let(:deck_name) { "prompts" }
+#   let(:test_deck) { ::ToBeRead::Deck.new(deck_name) }
+#   let(:return_value) { ["test TEST Test"] }
 
-  describe "#shuffle" do
-    it "should work" do
-      test_deck.instance_variable_set(:@deck, return_value)
-      expect(test_deck.shuffle).to(eq("Test Test Test"))
-    end
-  end
-end
+#   describe "#shuffle" do
+#     it "should work" do
+#       test_deck.instance_variable_set(:@deck, return_value)
+#       expect(test_deck.shuffle).to(eq("Test Test Test"))
+#     end
+#   end
+# end

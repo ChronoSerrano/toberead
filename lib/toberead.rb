@@ -12,5 +12,7 @@ module ToBeRead
   class Error < StandardError; end
 
   # Set template path
-  def self.template_dir = ::File.join(__dir__, "toberead", "templates")
+  def self.template_dir
+    ::File.join(__dir__, "toberead", "templates")
+  end
 end

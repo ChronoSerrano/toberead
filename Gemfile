@@ -39,3 +39,9 @@ gem "simplecov", "~> 0.21.2", require: false, group: :test
 
 # Codecov reporter
 gem "codecov", "~> 0.6.0", require: false, group: :test
+
+# Generate rspec skeleton
+gem "rspec-scaffold", "~> 2.0.0.beta1", require: false
+
+# Debugging tool (required by rspec-scaffold)
+gem "pry", "~> 0.14.1"
