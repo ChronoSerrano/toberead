@@ -6,12 +6,22 @@ module ToBeRead
   # Load properties to populate TBR decks
   class Property
     class << self
+      # Convert template into property map
+      def properties
+        @properties ||= ::YAML.safe_load(load_template)
+      end
+
+      # Convert property to string from symbol
+      def property_string(property)
+        property.to_s
+      end
+
       # Select a book property to fill in deck values
       def select(property)
-        properties = ::YAML.safe_load(load_template)
-        property_string = property.to_s
-        abort("Unknown property: #{property}") unless properties.key?(property_string)
-        properties[property_string].sample
+        @property_string = property_string(property)
+        raise(::ToBeRead::InvalidPropertyError, property) unless properties.key?(@property_string)
+
+        properties[@property_string].sample
       end
 
       private
