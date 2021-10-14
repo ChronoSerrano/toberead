@@ -2,6 +2,5 @@
 
 # Version number management
 module ToBeRead
-  VERSION = "0.1.0"
-  public_constant :VERSION
+  public_constant VERSION = "0.1.0"
 end
