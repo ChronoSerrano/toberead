@@ -10,7 +10,7 @@ require "spec_helper"
 
   describe "#initialize" do
     subject { test_deck.instance_variable_get(:@deck) }
-    it { is_expected.to_not eq(nil)}
+    it { is_expected.to_not(eq(nil)) }
   end
 
   describe "#shuffle" do
