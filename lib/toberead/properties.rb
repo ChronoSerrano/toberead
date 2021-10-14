@@ -18,10 +18,10 @@ module ToBeRead
 
       # Select a book property to fill in deck values
       def select(property)
-        @property_string = property_string(property)
-        raise(::ToBeRead::InvalidPropertyError, property) unless properties.key?(@property_string)
+        property_string = property_string(property)
+        raise(::ToBeRead::InvalidPropertyError, property) unless properties.key?(property_string)
 
-        properties[@property_string].sample
+        properties[property_string].sample
       end
 
       private
