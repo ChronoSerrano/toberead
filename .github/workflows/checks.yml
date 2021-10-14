@@ -1,0 +1,38 @@
+name: "Check Code"
+on: push
+jobs:
+  rspec:
+    name: Run RSpec
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+
+
+
+# ---
+# language: ruby
+# os: linux
+# dist: focal
+# cache: bundler
+# rvm:
+#   - 3.0.2
+# env:
+#   - TEST_SCRIPT="bundle exec rake spec"
+#   - TEST_SCRIPT="bundle exec rake rubocop"
+#   - TEST_SCRIPT="bundle exec bundler-audit"
+#   - TEST_SCRIPT="bundle exec mdl -c .mdlrc README.md"
+#   - TEST_SCRIPT="bundle exec reek"
+#   - TEST_SCRIPT="bundle exec churn"
+# before_install: gem install bundler -v 2.2.22
+# script: "${TEST_SCRIPT}"
+# after_success:
+#   # Install deepsource CLI
+#   - curl https://deepsource.io/cli | sh
+
+#   # From the root directory, run the report coverage command
+#   - ./bin/deepsource report --analyzer test-coverage --key ruby --value-file ./coverage/.resultset.json
