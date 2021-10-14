@@ -14,5 +14,8 @@ Style/StringLiteralsInInterpolation:
 Style/Copyright:
   Enabled: false
 
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
+
 Layout/LineLength:
   Max: 120

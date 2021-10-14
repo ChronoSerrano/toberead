@@ -1,6 +1,6 @@
 # ToBeRead
 
-[![codecov](https://codecov.io/gh/ChronoSerrano/toberead/branch/main/graph/badge.svg?token=AKIEVMU524)](https://codecov.io/gh/ChronoSerrano/toberead)
+[![DeepSource](https://deepsource.io/gh/ChronoSerrano/toberead.svg/?label=active+issues&token=PjwQVfUR_qTPQCPjaxSXcuEs)](https://deepsource.io/gh/ChronoSerrano/toberead/?ref=repository-badge)
 
 A commandline tool to generate ideas for what should be next on
 your TBR (To Be Read) list.

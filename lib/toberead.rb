@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-require_relative "toberead/decks"
-require_relative "toberead/properties"
-require_relative "toberead/errors"
-require_relative "toberead/version"
+# require all files under lib/toberead
+::Dir.glob(::File.join(::File.dirname(::File.absolute_path(__FILE__)), "toberead", "*.rb"), &method(:require))
 
 # Top-level Module for Project
 module ToBeRead

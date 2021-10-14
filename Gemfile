@@ -8,7 +8,7 @@ gemspec
 gem "rake", "~> 13.0"
 
 # Ruby unit tests
-gem "rspec", "~> 3.0"
+gem "rspec", "~> 3.0", group: :test
 
 # Code checker
 gem "rubocop", "~> 1.7"
@@ -48,3 +48,15 @@ gem "pry", "~> 0.14.1"
 
 # gem version management
 gem "gem-release", "~> 2.2"
+
+# Documentation Coverage Tool
+gem "inch", "~> 0.8.0"
+
+# Documentation Generation Tool
+gem "yard", "~> 0.9.26"
+
+# Required by yard
+gem "rack", "~> 2.2"
+
+# Required by yard
+gem "webrick", "~> 1.7"
