@@ -17,7 +17,7 @@ require_relative "lib/toberead"
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://rubygems.org/toberead"
+  spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "https://github.com/chronoserrano/toberead/changelog.md"
 
   # Specify which files should be added to the gem when it is released.

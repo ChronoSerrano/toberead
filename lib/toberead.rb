@@ -3,11 +3,10 @@
 require_relative "toberead/decks"
 require_relative "toberead/properties"
 require_relative "toberead/errors"
+require_relative "toberead/version"
 
 # Top-level Module for Project
 module ToBeRead
-
-
   # Set template path
   def self.template_dir
     ::File.join(__dir__, "toberead", "templates")
