@@ -45,3 +45,5 @@ gem "rspec-scaffold", "~> 2.0.0.beta1", require: false
 
 # Debugging tool (required by rspec-scaffold)
 gem "pry", "~> 0.14.1"
+
+gem "gem-release", "~> 2.2"
