@@ -6,8 +6,7 @@ require_relative "toberead/errors"
 
 # Top-level Module for Project
 module ToBeRead
-  VERSION = "0.1.1"
-  public_constant :VERSION
+
 
   # Set template path
   def self.template_dir
