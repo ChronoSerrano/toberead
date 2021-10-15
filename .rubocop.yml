@@ -1,7 +1,16 @@
+require:
+  - rubocop-rake
+  - rubocop-rspec
+inherit_gem:
+  rubocop-rake: .rubocop.yml
+
 AllCops:
   TargetRubyVersion: 3.0.2
   EnabledByDefault: true
   NewCops: enable
+  Exclude:
+    - 'bin/tapioca'
+    - "vendor/**/*"
 
 Style/StringLiterals:
   Enabled: true
@@ -19,3 +28,6 @@ Style/DisableCopsWithinSourceCodeDirective:
 
 Layout/LineLength:
   Max: 120
+
+Style/AccessModifierDeclarations:
+  Enabled: false

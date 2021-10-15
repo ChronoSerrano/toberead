@@ -6,7 +6,7 @@
 # Top-level Module for Project
 module ToBeRead
   # Set template path
-  def self.template_dir
-    ::File.join(__dir__, "toberead", "templates")
-  end
+  # @return [::String]
+  TEMPLATE_DIR = ::File.join(__dir__, "toberead", "templates")
+  public_constant :TEMPLATE_DIR
 end

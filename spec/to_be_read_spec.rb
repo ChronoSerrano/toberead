@@ -7,9 +7,9 @@ require "spec_helper"
     expect(::ToBeRead::VERSION).not_to(be(nil))
   end
 
-  it "does something useful" do
-    expect(false).to(eq(false))
-  end
+  # it "does something useful" do
+  #   expect(false).to(eq(false))
+  # end
 end
 
 # ::RSpec.describe(::ToBeRead::Deck) do

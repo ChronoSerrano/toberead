@@ -41,7 +41,6 @@ gem "simplecov", "~> 0.21.2", require: false, group: :test
 gem "codecov", "~> 0.6.0", require: false, group: :test
 
 # Generate rspec skeleton
-gem "rspec-scaffold", "~> 2.0.0.beta1", require: false
 
 # Debugging tool (required by rspec-scaffold)
 gem "pry", "~> 0.14.1"
@@ -60,3 +59,24 @@ gem "rack", "~> 2.2"
 
 # Required by yard
 gem "webrick", "~> 1.7"
+
+# Ruby Typing
+gem "rbs", "~> 1.6"
+
+# Ruby Typing Profiler
+gem "typeprof", "~> 0.20.0"
+
+# Ruby Typing based on yard comments
+gem "sord", "~> 3.0.0"
+
+# Required by sord
+gem "sorted_set", "~> 1.0"
+
+# Ruby Type Checker
+gem "sorbet", "~> 0.5.9238", group: :development
+
+# Ruby Type Checker Runtime
+gem "sorbet-runtime", "~> 0.5.9238"
+
+# Ruby Type Checker File Generation
+gem "tapioca", "~> 0.5.2", require: false, group: :development

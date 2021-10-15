@@ -1,0 +1,47 @@
+# Version number management
+module ToBeRead
+  TEMPLATE_DIR: untyped
+  VERSION: untyped
+
+  # Management for TBR decks
+  class Deck
+    # sord omit - no YARD type given for "deck_type", using untyped
+    # Build deck from template associated with deck_type
+    def initialize: (untyped deck_type) -> void
+
+    # sord omit - no YARD return type given, using untyped
+    # Shuffle the deck and select one card
+    def shuffle: () -> untyped
+  end
+
+  # Catch-all Error class
+  class DefaultError < StandardError
+  end
+
+  # Property doesn't exist
+  class InvalidPropertyError < StandardError
+    # sord omit - no YARD type given for "property", using untyped
+    # pass property into message
+    def initialize: (untyped property) -> void
+  end
+
+  # Load properties to populate TBR decks
+  class Property
+    # sord omit - no YARD return type given, using untyped
+    # Convert template into property map
+    def self.properties: () -> untyped
+
+    # sord omit - no YARD type given for "property", using untyped
+    # sord omit - no YARD return type given, using untyped
+    # Convert property to string from symbol
+    def self.property_string: (untyped property) -> untyped
+
+    # sord omit - no YARD type given for "property", using untyped
+    # sord omit - no YARD return type given, using untyped
+    # Select a book property to fill in deck values
+    def self.select: (untyped property) -> untyped
+
+    # sord omit - no YARD return type given, using untyped
+    def self.load_template: () -> untyped
+  end
+end
