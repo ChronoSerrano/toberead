@@ -3,8 +3,9 @@
 require "spec_helper"
 
 ::RSpec.describe(::ToBeRead::Property) do
-  let(:properties) { ::ToBeRead::Property.properties }
-  let(:property_string) { ::ToBeRead::Property.property_string(:test_string) }
+  let(:properties)      { described_class.properties                    }
+  let(:property_string) { described_class.property_string(:test_string) }
+
   describe ".properties" do
     it { expect(properties.class).to(eq(::Hash)) }
   end
@@ -15,10 +16,11 @@ require "spec_helper"
   end
 
   describe ".select" do
-    let(:color_property) { ::ToBeRead::Property.select(:color) }
+    let(:color_property) { described_class.select(:color) }
 
     context "when the property doesn't exist" do
-      let(:blah_property) { ::ToBeRead::Property.select(:blah) }
+      let(:blah_property) { described_class.select(:blah) }
+
       it "raises an InvalidPropertyError" do
         expect { blah_property }
           .to(raise_error(::ToBeRead::InvalidPropertyError))
@@ -27,6 +29,7 @@ require "spec_helper"
 
     context "when the property is valid" do
       let(:first_color) { "red" }
+
       it { expect(color_property.class).to(eq(::String)) }
       it { expect(properties["color"].first).to(eq(first_color)) }
     end
